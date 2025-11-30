@@ -42,6 +42,13 @@ The system integrates real-time data ingestion, technical analysis, risk analyti
 2. MAE
 
 3. RMSE
+<h3>📦 Packages Used </h3>
+- Pandas, Numpy
+- Matplotlib, Seaborn, Plotly
+- Scikit-Learn, StatsModel
+- Tensorflow
+- sqlalchemy, os 
+- Streamlit
 
 <h2>📊 Technical Indicators (ta / TA-Lib)</h2>
 
@@ -63,15 +70,10 @@ These features improve the model’s predictive capability beyond raw prices.
 
 <h2>📉 Risk Metrics Dashboard</h2>
 
-Real-time risk evaluation:
-
-Volatility (%)
-
-Sharpe Ratio
-
-Maximum Drawdown
-
-Value at Risk (VaR 95%)
+Real-time risk evaluation: Volatility (%), Sharpe Ratio, Maximum Drawdown, Value at Risk (VaR 95%)
+<p align="center">
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/134dd375-ef54-4bbd-8314-930a72ee391f" />
+</p>
 
 <h2>📈 Interactive Visualization</h2>
 
