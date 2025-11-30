@@ -5,6 +5,10 @@ A Deep Learning System for Multi-Interval Financial Market Forecasting
 This project is a full-stack machine learning application that predicts future prices of financial assets such as stocks, cryptocurrencies, forex pairs, and commodities using LSTM (Long Short-Term Memory) neural networks.
 The system integrates real-time data ingestion, technical analysis, risk analytics, and interactive visualization into a unified Streamlit dashboard.
 
+<p align="center">
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7fe099ac-c548-4070-9158-6100e5f75ffa" />
+</p>
+
 <h2>🎯 Project Objectives</h2>
 
 - ✔ Develop a robust LSTM model for multi-step financial time-series forecasting
