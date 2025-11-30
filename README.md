@@ -1,40 +1,84 @@
-**📈 Asset Price Prediction Using LSTM**
+📈 Asset Price Prediction Using LSTM
 
-A deep learning-powered web application that predicts future prices of financial assets such as stocks, crypto, forex, and commodities using LSTM (Long Short-Term Memory) neural networks and technical analysis indicators. This project combines time-series forecasting, financial data engineering, and interactive visualization into a single real-time Streamlit dashboard.
+A Deep Learning System for Multi-Interval Financial Market Forecasting
 
-**📌 Project Overview:**
-This system allows users to:
-Select any asset (e.g., BTC-USD, AAPL, EUR-USD, GOLD)
-Choose time intervals (1h, 4h, or 1 day)
-View predictions with confidence intervals
-Analyze risk using real-time metrics (Volatility, Sharpe Ratio, Drawdown, VaR)
+This project is a full-stack machine learning application that predicts future prices of financial assets such as stocks, cryptocurrencies, forex pairs, and commodities using LSTM (Long Short-Term Memory) neural networks.
+The system integrates real-time data ingestion, technical analysis, risk analytics, and interactive visualization into a unified Streamlit dashboard.
 
-**✅ Built using:**
-Python
-TensorFlow/Keras (LSTM model)
-yfinance (data)
-TA-Lib / ta library (technical indicators)
-SQLite (caching historical data)
-Streamlit + Plotly (visualization)
+🎯 Project Objectives
 
-**⚙️ Features:**
-🔄 Dynamic Data Fetching: Fetches live historical data from Yahoo Finance using yfinance
-🧠 LSTM-Based Price Prediction: Trains a fresh LSTM model per asset and time frame
-📊 Technical Indicators: Uses features like RSI, MACD, SMA, Volatility, and Returns
-📉 Risk Metrics Display: Shows Sharpe Ratio, Value at Risk (VaR), Volatility, and Max Drawdown
-📈 Interactive Visualization: Real-time charts with prediction lines and confidence intervals
-🧪 Model Evaluation: R² Score, MAE, and RMSE are computed for each asset
-🧩 Modular Codebase: Clean separation of data, modeling, visualization, and app logic
+✔ Develop a robust LSTM model for multi-step financial time-series forecasting
+✔ Support multiple assets and intervals (1h, 4h, 1d)
+✔ Incorporate technical indicators for more stable predictions
+✔ Provide real-time market risk analysis (Volatility, VaR, Sharpe Ratio, Drawdown)
+✔ Build a user-friendly dashboard for traders, analysts, and researchers
+✔ Maintain a modular, scalable codebase suitable for deployment and extension
+✔ Cache data efficiently using SQLite to avoid redundant API calls
+✔ Enable live visualization of past data, predictions, and confidence intervals
 
-**🧠 Model Architecture:**
-LSTM layer (128 units)
-LSTM layer (64 units)
-Dropout (30%)
-Dense layer (32)
-Output layer (1 neuron for price)
+📌 Key Features
+🔄 Dynamic Data Fetching
 
-Optimizer: Adam | Loss: MSE
+Pulls the latest historical OHLCV data using yfinance
 
-Evaluation: R² Score, MAE, RMSE
+Automatically updates based on the chosen asset and interval
 
-The model learns from the past N timesteps of price and indicators to predict the next price point.
+Uses SQLite caching to reduce network calls
+
+🧠 LSTM-Based Price Prediction
+
+Trains a dedicated LSTM model per asset + time interval
+
+Predicts the next price and provides confidence bounds
+
+Computes evaluation metrics:
+
+R² Score
+
+MAE
+
+RMSE
+
+📊 Technical Indicators (ta / TA-Lib)
+
+Integrated indicators include:
+
+SMA / EMA
+
+RSI
+
+MACD
+
+Bollinger Bands
+
+Volatility
+
+Daily Returns
+
+These features improve the model’s predictive capability beyond raw prices.
+
+📉 Risk Metrics Dashboard
+
+Real-time risk evaluation:
+
+Volatility (%)
+
+Sharpe Ratio
+
+Maximum Drawdown
+
+Value at Risk (VaR 95%)
+
+📈 Interactive Visualization
+
+Built using Plotly + Streamlit, including:
+
+Historical price chart
+
+Future price predictions
+
+Confidence bands
+
+Indicator overlays
+
+Real-time metric cards
