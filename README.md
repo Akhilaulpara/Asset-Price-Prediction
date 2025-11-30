@@ -1,4 +1,4 @@
-📈 Asset Price Prediction Using LSTM
+<h2>**📈 Asset Price Prediction Using LSTM**</h2>
 
 A Deep Learning System for Multi-Interval Financial Market Forecasting
 
