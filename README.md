@@ -16,48 +16,48 @@ The system integrates real-time data ingestion, technical analysis, risk analyti
 - ✔ Cache data efficiently using SQLite to avoid redundant API calls
 - ✔ Enable live visualization of past data, predictions, and confidence intervals
 
-📌 Key Features
-🔄 Dynamic Data Fetching
+<h2>📌 Key Features</h2>
+<h3>🔄 Dynamic Data Fetching</h3>
 
-Pulls the latest historical OHLCV data using yfinance
+- Pulls the latest historical OHLCV data using yfinance
 
-Automatically updates based on the chosen asset and interval
+- Automatically updates based on the chosen asset and interval
 
-Uses SQLite caching to reduce network calls
+- Uses SQLite caching to reduce network calls
 
-🧠 LSTM-Based Price Prediction
+<h3>🧠 LSTM-Based Price Prediction</h3>
 
-Trains a dedicated LSTM model per asset + time interval
+- Trains a dedicated LSTM model per asset + time interval
 
-Predicts the next price and provides confidence bounds
+- Predicts the next price and provides confidence bounds
 
-Computes evaluation metrics:
+- Computes evaluation metrics:
 
-R² Score
+1. R² Score
 
-MAE
+2. MAE
 
-RMSE
+3. RMSE
 
-📊 Technical Indicators (ta / TA-Lib)
+<h2>📊 Technical Indicators (ta / TA-Lib)</h2>
 
-Integrated indicators include:
+- Integrated indicators include:
 
-SMA / EMA
+- SMA / EMA (Simple/ Exponential Moving Average)
 
-RSI
+- RSI (Relative Strength Index)
 
-MACD
+- MACD ((Moving Average Convergence Divergence)
 
-Bollinger Bands
+- Bollinger Bands
 
-Volatility
+- Volatility
 
-Daily Returns
+- Daily Returns
 
 These features improve the model’s predictive capability beyond raw prices.
 
-📉 Risk Metrics Dashboard
+<h2>📉 Risk Metrics Dashboard</h2>
 
 Real-time risk evaluation:
 
@@ -69,16 +69,16 @@ Maximum Drawdown
 
 Value at Risk (VaR 95%)
 
-📈 Interactive Visualization
+<h2>📈 Interactive Visualization</h2>
 
-Built using Plotly + Streamlit, including:
+- Built using Plotly + Streamlit, including:
 
-Historical price chart
+- Historical price chart
 
-Future price predictions
+- Future price predictions
 
-Confidence bands
+- Confidence bands
 
-Indicator overlays
+- Indicator overlays
 
-Real-time metric cards
+- Real-time metric cards
