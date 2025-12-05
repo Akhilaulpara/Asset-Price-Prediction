@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![LSTM](https://img.shields.io/badge/Model-LSTM-green)
+
 <h2>📈 Asset Price Prediction Using LSTM</h2>
 
 A Deep Learning System for Multi-Interval Financial Market Forecasting
